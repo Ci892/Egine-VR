@@ -29,22 +29,24 @@
             <audio id="museumTalk" src="asset/472647__shaunoboyle__quiet-museum-gallery.wav"></audio>
             <audio id="audioClick" src="asset/"></audio>
             <a-image id="infoIcon" src="asset/InfoPng.png"></a-image>
+            <a-image id="marbleTexture" src="asset/294050821a3d0229a6ccf18ba883b434-4044784177.jpg"></a-image>
+            <a-image id="statueTexture" src="asset/RealityCapture_E11_texture.jpeg"></a-image>
             </a-assets>
-        <a-entity class="clickable" geometry="" position="0 0.49883 -1.3763" scale="0.40889 0.33398 1" visible="true">
+        <a-entity class="clickable" geometry="" position="0 0.49883 -1.3763" scale="0.40889 0.33398 1" visible="false">
             <a-animation begin="click" fill="forwards" repeat="1" direction="alternate" attribute="scale" from="1 1 1" to="1.5 1.5 1.5" dur="1000"></a-animation>
             <a-animation begin="cursor-fusing" fill="forwards" repeat="1" attribute="text.opacity" from="0" to="1" dur="2000"></a-animation>
             <a-text value="Looked for 2 seconds!" position="0 0.1 0" scale="0.2 0.2 0.2" visible="false"></a-text>
         </a-entity>
         <a-entity position="0 0.275 -1.552" id="statue">
-             <a-obj-model src="#E11" rotation="-86.4536017072899 -178.2024793571789 -6.350091243434914" scale="" material="" obj-model="" position="0.283 0.25003 0.37344"></a-obj-model>
+             <a-obj-model src="#E11" rotation="-86.4536017072899 -178.2024793571789 -6.350091243434914" scale="" material="src:#statueTexture" obj-model="" position="0.283 0.25003 0.37344"></a-obj-model>
              <a-box material="color: #fff" geometry="" scale="2.67884 1 1" rotation=""></a-box>
              <a-box material="color: #fff" geometry="" scale="2.67884 1 1" rotation="" position="0 -0.03739 0.06632"></a-box> 
                 <a-entity id="logo" class="clickable" geometry="primitive: plane" material="src:#infoIcon ; transparent: true" 
                     sound="src: asset/; on: click; refDistance: 4; rolloffFactor: 4" position="0 0.27779 0.56687" scale="0.15539 0.13306 1">
         </a-entity>
         </a-entity>
-        <a-entity id="room" scale="1 1 4.15664" position="0 0 15.84216">
-            <a-plane position="-0.0062 0 -4" rotation="-90 0 0" width="4" height="4" color="#roomColor" shadow="" material="" geometry="" id="floor-room"></a-plane>
+        <a-entity id="room" scale="2.126 1 4.157" position="0 0 15.842">
+            <a-plane position="-0.0062 0 -4" rotation="-90 0 0" width="4" height="4" color="" shadow="" material="src:#marbleTexture" geometry="" id="floor-room"></a-plane>
             <a-plane position="-0.0062 3.13589 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow="" material="side: back" geometry="" id="roof-room"></a-plane>
             <a-plane position="-0.0062 1.13895 -5.99851" rotation="" width="4" height="4" color="#7BC8A4" shadow="" material="" geometry="" id="back-wall-room"></a-plane>
             <a-plane position="-2.00447 1.13895 -4.03682" rotation="0 90 0" width="4" height="4" color="#7BC8A4" shadow="" material="" geometry="" id="right-wall-room"></a-plane>
